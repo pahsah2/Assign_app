@@ -38,7 +38,7 @@ export default function DetailCustomerScreen({ match }) {
             <h3>อีเมล {customer.email}</h3>
             <h3>บ้านที่อยู่ {customer.house}</h3>
             <h3>รายละเอียด {customer.description}</h3>
-            <h3>ผู้บันทึก {customer.user}</h3>
+            <h3>ผู้บันทึก {customer.user.name}</h3>
           </Col>
           <Col>
             <LinkContainer to={`/customer/${customer._id}/pdf`}>
