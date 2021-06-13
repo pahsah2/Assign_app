@@ -13,7 +13,10 @@ const getCustomers = asyncHandler(async (req, res) => {
 // @route GET /api/customers/:id
 // @access Public
 const getCustomerById = asyncHandler(async (req, res) => {
-  const customer = await Customer.findById(req.params.id)
+  const customer = await Customer.findById(req.params.id).populate(
+    'user',
+    'name email'
+  )
 
   if (customer) {
     res.json(customer)

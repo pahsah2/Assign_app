@@ -14,22 +14,23 @@ const App = () => {
   return (
     <Router basename="/">
       <Header />
-
-      <Container>
-        <Switch>
-          <Route path="/" exact component={LoginScreen} />
-          <Route path="/register" exact component={RegisterScreen} />
-          <Route path="/customer" exact component={CustomerScreen} />
-          <Route path="/customer/add" exact component={AddcustomerScreen} />
-          <Route
-            path="/customer/:id/edit"
-            exact
-            component={CustomerEditScreen}
-          />
-          <Route path="/customer/:id/pdf" component={PDFScreen} />
-          <Route path="/customer/:id" component={DetailCustomerScreen} />
-        </Switch>
-      </Container>
+      <main className="py-3">
+        <Container>
+          <Switch>
+            <Route path="/" exact component={LoginScreen} />
+            <Route path="/register" exact component={RegisterScreen} />
+            <Route path="/customer" exact component={CustomerScreen} />
+            <Route path="/customer/add" exact component={AddcustomerScreen} />
+            <Route
+              path="/customer/:id/edit"
+              exact
+              component={CustomerEditScreen}
+            />
+            <Route path="/customer/:id/pdf" component={PDFScreen} />
+            <Route path="/customer/:id" component={DetailCustomerScreen} />
+          </Switch>
+        </Container>
+      </main>
     </Router>
   )
 }
