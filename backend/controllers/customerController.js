@@ -14,7 +14,14 @@ const getCustomers = asyncHandler(async (req, res) => {
 // @access Public
 const getCustomerById = asyncHandler(async (req, res) => {
   const customer = await Customer.findById(req.params.id)
-
+  
+// มีอาการ ใส่แล้วทำให้เเสดงหน้า Detail กับ Pdf ไม่ได้ 
+.populate(
+    'user',
+    'name email'
+  )
+////////ซึ่งมันควรจะสามารถแสดง  user ใน collection ของ customers Database ได้ ////////
+  
   if (customer) {
     res.json(customer)
   } else {
