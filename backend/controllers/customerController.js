@@ -5,7 +5,10 @@ import Customer from '../models/customerModel.js'
 // 2routes GET /api/customers
 // @access Public
 const getCustomers = asyncHandler(async (req, res) => {
-  const customers = await Customer.find({})
+  const customers = await Customer.find({}).populate(
+    'user',
+    'name email'
+  )
   res.json(customers)
 })
 
