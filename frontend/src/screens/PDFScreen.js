@@ -75,7 +75,7 @@ const PDFScreen = ({ match }) => {
                   <Text>{customer.description}</Text>
                 </View>
                 <View style={styles.section}>
-                  <Text>{customer.user.name}</Text>
+                  <Text>{customer.user && customer.user.name}</Text>
                 </View>
               </Page>
             </Document>
