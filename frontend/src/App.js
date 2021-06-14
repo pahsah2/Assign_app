@@ -18,14 +18,10 @@ const App = () => {
         <Container>
           <Switch>
             <Route path="/" exact component={LoginScreen} />
-            <Route path="/register" exact component={RegisterScreen} />
-            <Route path="/customer" exact component={CustomerScreen} />
-            <Route path="/customer/add" exact component={AddcustomerScreen} />
-            <Route
-              path="/customer/:id/edit"
-              exact
-              component={CustomerEditScreen}
-            />
+            <Route path="/register" component={RegisterScreen} />
+            <Route path="/customer" component={CustomerScreen} />
+            <Route path="/customer/add" component={AddcustomerScreen} />
+            <Route path="/customer/:id/edit" component={CustomerEditScreen} />
             <Route path="/customer/:id/pdf" component={PDFScreen} />
             <Route path="/customer/:id" component={DetailCustomerScreen} />
           </Switch>

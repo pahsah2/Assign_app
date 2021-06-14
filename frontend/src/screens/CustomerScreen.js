@@ -133,7 +133,8 @@ const CustomerScreen = ({ history }) => {
             </Table>
           </Col>
         </Row>
-      ) : (
+      ) : null}
+      {userInfo && !userInfo.isAdmin ? (
         <Row>
           <Col>
             <Table bordered responsive hover className="table-lg">
@@ -187,7 +188,7 @@ const CustomerScreen = ({ history }) => {
             </Table>
           </Col>
         </Row>
-      )}
+      ) : null}
     </>
   )
 }

@@ -20,7 +20,7 @@ const Header = ({ history }) => {
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
-          <LinkContainer to="/customer">
+          <LinkContainer to="/">
             <Navbar.Brand>MyWork</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
