@@ -10,3 +10,6 @@
 6.เซฟเป็นไฟล์ PDF ได้ 
 
 ##### ต้องเข้าหน้า edit ก่อน ถึงจะเข้า component ดูรายละเอียดลูกค้าได้ กับ เซฟไฟล์ pdf 
+
+### Update now fix login systems  
+if not user or admin can't see Detail customer 
