@@ -13,3 +13,5 @@
 
 ### Update now fix login systems  
 if not user or admin can't see Detail customer 
+
+#### Update can fix DetailScreen and PDf Screen
